@@ -1,0 +1,13 @@
+db_link: http://localhost:8080/h2-console/login.do?jsessionid=ebd68062707ee75afb2b967d12b9aaf8
+curls  : 
+create : 
+curl -X POST http://localhost:8080/users \
+-H "Content-Type: application/json" \
+-d '{"username":"ankush","password":"123456"}'
+
+Get_All: 
+curl -X GET http://localhost:8080/users
+
+
+GET_by_id : 
+curl http://localhost:8080/users/1
